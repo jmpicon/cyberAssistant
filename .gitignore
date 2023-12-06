@@ -152,6 +152,40 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+# Directorios y archivos generados por Docker
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+db.sqlite3
+*.log
+.docker/
+
+# Machine Learning
+*.model
+*.h5
+*.sav
+# Directorios para datos o notebooks de Jupyter
+data/
+notebooks/
+*.ipynb_checkpoints
+
+# Environment variables and configurations
+.env
+config.py
+
+# General
+*.log
+*.csv
+*.json
+tmp/
+
+
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
