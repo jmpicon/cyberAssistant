@@ -1,53 +1,64 @@
-# Asistente de Ciberseguridad Personalizado con Aprendizaje Automático
+# Proyecto de Ciberseguridad con Flask y Machine Learning
 
 ## Descripción
-Este proyecto es un asistente de ciberseguridad innovador que utiliza técnicas de aprendizaje automático para aprender de los hábitos de seguridad del usuario y ofrecer consejos personalizados. Su objetivo es mejorar la seguridad informática del usuario a través de un análisis detallado y recomendaciones adaptadas a sus necesidades específicas.
+Este proyecto es un asistente de ciberseguridad avanzado que utiliza Flask y Machine Learning para analizar el comportamiento del usuario, detectar amenazas y ofrecer recomendaciones personalizadas.
 
 ## Características
-- **Análisis de Comportamiento del Usuario**: Utiliza algoritmos de machine learning para entender los patrones de seguridad del usuario.
-- **Detección de Amenazas**: Identifica riesgos de seguridad basándose en comportamientos anormales y vulnerabilidades conocidas.
-- **Recomendaciones Personalizadas**: Genera consejos de seguridad adaptados a las actividades y hábitos del usuario.
-- **Interfaz Interactiva**: Permite al usuario configurar preferencias, recibir feedback y entender mejor sus prácticas de seguridad.
-
-## Tecnologías Utilizadas
-- Python 3.x
-- TensorFlow o PyTorch (para machine learning)
-- Flask o Django (para la interfaz web, opcional)
-- SQLite o PostgreSQL (para la gestión de bases de datos)
+- **Análisis de Comportamiento del Usuario**: Utiliza técnicas de aprendizaje automático para identificar comportamientos anómalos.
+- **Detección de Amenazas**: Integra con bases de datos de vulnerabilidades para identificar riesgos de seguridad.
+- **Recomendaciones Personalizadas**: Genera consejos de seguridad basados en el análisis de datos.
+- **Interfaz Web con Flask**: Proporciona una interfaz interactiva para los usuarios.
 
 ## Estructura del Proyecto
 ```
 /proyecto-ciberseguridad
 │
 ├── src/
+│   ├── __init__.py
 │   ├── main.py
-│   ├── machine_learning_module.py
-│   └── data_analysis_module.py
+│   ├── routes.py
+│   ├── user_behavior_analysis.py
+│   ├── threat_detection.py
+│   ├── recommendation_system.py
+│   ├── templates/
+│   │   └── index.html
+│   └── static/
+│       └── favicon.ico
+│
+├── models/
+│   ├── anomaly_detection_model.py
+│   └── recommendation_model.py
 │
 ├── data/
 │   └── user_data.json
 │
-├── docs/
-│   └── documentation.md
+├── utils/
+│   ├── database_connection.py
+│   └── data_preprocessing.py
 │
-└── tests/
-    ├── test_main.py
-    └── test_data_analysis.py
+├── tests/
+│   ├── test_main.py
+│   └── test_user_behavior_analysis.py
+│
+├── run.py
+├── config.py
+└── requirements.txt
 ```
 
 ## Instalación y Configuración
-Describir aquí los pasos para instalar y configurar el asistente de ciberseguridad. Por ejemplo:
-```bash
-git clone https://github.com/tu-usuario/proyecto-ciberseguridad.git
-cd proyecto-ciberseguridad
-pip install -r requirements.txt
-```
+- Asegúrate de tener Python y pip instalados.
+- Instala las dependencias con:
+  ```bash
+  pip install -r requirements.txt
+  ```
+- Configura las variables de entorno necesarias para la base de datos y otros servicios.
 
 ## Uso
-Explica cómo los usuarios pueden empezar a utilizar el asistente, incluyendo comandos y ejemplos de uso. Por ejemplo:
-```bash
-python src/main.py
-```
+- Para iniciar la aplicación, navega al directorio del proyecto y ejecuta:
+  ```bash
+  python run.py
+  ```
+- Accede a la aplicación a través de `http://127.0.0.1:5000/` en tu navegador.
 
 ## Contribuciones
 Las contribuciones son bienvenidas. Si tienes una idea o sugerencia, por favor abre un 'issue' o envía un 'pull request'.
@@ -56,5 +67,6 @@ Las contribuciones son bienvenidas. Si tienes una idea o sugerencia, por favor a
 [MIT License](LICENSE.md)
 
 ## Autores
-- José (tu_nombre_completo) - *Desarrollador Principal*
+- José Picón - Desarrollador Principal
+
 
